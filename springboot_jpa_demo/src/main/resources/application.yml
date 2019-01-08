@@ -18,5 +18,7 @@ spring:
   redis:
     host: 127.0.0.1
     port: 6379
+    
+person: {name: TOM,age: 18}
 
 city: [北京,上海,西安]
