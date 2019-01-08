@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/jpa
+    username: root
+    password: 123456
+
+  jpa:
+    database: mysql
+    show-sql: true  #是否打印sql语句
+    generate-ddl: true  #是否自动创建表
+    hibernate:
+      ddl-auto: update  # 创建表的方式  create  update  none
+      naming:
+        #physical-strategy属性替换hibernate4中的strategy
+        #该属性一般不需要进行设置
+        physical-strategy: cn.itcast.MyStrategy
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+
