@@ -9,4 +9,6 @@ import java.util.List;
 public interface UserRepository extends JpaRepository<User,Integer>,JpaSpecificationExecutor<User> {
 
     public List<User> findAll();
+
+    public User findUserById(Integer id);
 }
