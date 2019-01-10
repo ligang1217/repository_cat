@@ -11,4 +11,7 @@ public interface UserRepository extends JpaRepository<User,Integer>,JpaSpecifica
     public List<User> findAll();
 
     public User findUserById(Integer id);
+
+
+    public void saveUser(User user);
 }
